@@ -1,0 +1,18 @@
+default:
+  - daily
+channels:
+  single:
+    driver: single
+    format: text
+    level: debug
+    path: logs
+    linkPath:
+    days: 14
+  daily :
+    driver: daily
+    format: text
+    level: debug
+    path: logs
+    linkPath:
+    days: 14
+    rotationTime: 86400

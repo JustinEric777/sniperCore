@@ -1,0 +1,11 @@
+s3Cloud:
+  disks:
+#    dq_pic_cloud:
+#      driver: s3
+#      key:
+#      secret:
+#      token:
+#      region: us-east-1
+#      url:
+#      end_point:
+#      bucket:

@@ -1,0 +1,12 @@
+auth:
+  #加解密key - jwt
+  secretKey: 12344555665
+  #加密算法: HMAC(HMAC256, HMAC384, HMAC512) ,ECDSA, RSA
+  secretMethod: HMAC256
+  #小时为单位
+  expireTime: 24
+  #更新token时间，小时为单位
+  refreshTime: 24
+
+
+

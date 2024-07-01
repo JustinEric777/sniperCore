@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "/testGrpc";
+
+package testGrpc;
+
+service Greeter {
+    rpc sayHello (HelloRequest) returns(HelloReplay) {}
+
+    rpc SayHelloAgain (HelloRequest) returns (HelloReplay) {}
+}
+
+message HelloRequest{
+    string name = 1;
+}
+
+message HelloReplay{
+    string message = 1;
+}

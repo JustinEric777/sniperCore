@@ -1,0 +1,52 @@
+database:
+  default: mysql
+  connections:
+    mysql:
+      driver: mysql
+      base:
+        host: 127.0.0.1
+        port: 3306
+        userName: root
+        password: 123456
+        dbName: sniper
+      option:
+        charset: utf8mb4
+        maxIdleConns: 10
+        maxOpenConns: 50
+        connMaxLifetime: 24
+redis:
+  driver: go-redis
+  cluster: false
+  connections :
+#    redis:
+#      host:
+#      port:
+#      password:
+#      database:
+#      options:
+
+es:
+  #es连接可以支持多个
+  connections :
+#    es:
+#      host:
+#        - http://127.0.0.1:9200
+#      schema: http
+#      maxRetries: 3
+#      baseAuth:
+#        username:
+#        password:
+#      sniff:
+#        isSniff: false
+#        snifferTimeoutStartup:
+#        snifferTimeout:
+#        snifferInterval:
+#      healthCheck:
+#        isHealthCheck: false
+#        healthcheckTimeoutStartup:
+#        healthcheckTimeout:
+#        healthcheckInterval:
+
+
+
+

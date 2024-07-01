@@ -1,0 +1,36 @@
+servers:
+  basic:
+    serviceName: sniperCore
+    serviceId: sniperCore
+  http:
+    addr: 0.0.0.0
+    port: 9090
+    debug: false
+    timeout: 60
+    readTimeout: 30
+    writeTimeout: 30
+    idleTimeout: 10
+  consul:
+    host: 127.0.0.1
+    port: 8500
+    enabled: false
+    workerId: "node"
+    workerType: "ms"
+    workerMeta: {}
+    tag: []
+    workerCount: 4
+    check:
+      enabled: true
+      timeout: 1
+      interval: 10
+      removeTime: 1
+config:
+  isCloud: false
+  type: consul
+  host: 127.0.0.1
+  port: 8500
+  prefix:
+
+
+
+
